@@ -1,2 +1,0 @@
-# paideiaweb
-PAC3
