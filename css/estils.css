@@ -1,0 +1,1682 @@
+/*ESTILS GENERALS*/
+
+html {
+    font-size: 15px;
+}
+   
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    margin: 0;
+}
+
+h1 {
+    font-size: 4rem;
+    color:#D11067;
+    margin-bottom: 0;   
+    justify-content: left;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color:#7A1628; 
+}
+
+
+h3 {
+    font-size: 1.8rem;
+}
+
+p {
+    color: #172655;
+}
+
+.container {
+    width: 90%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 1024px) 
+{ 
+.container {
+    width: 80%;
+    max-width: 1500px;
+    margin: 0 auto;
+}}
+
+
+* { 
+    box-sizing: border-box;
+}
+
+
+.button_container_center{
+    margin: 3rem 0 3rem 0;
+    display: flex;
+    justify-content: center;
+    }
+
+.button_container_left {
+    margin: 3rem 0 3rem 0;
+    display: flex;
+    justify-content: start;
+}
+
+.a_button {
+    font-size: 1.5rem;
+    font-weight: 500;
+    border: #D11067 solid 2px;
+    border-radius: 10px;
+    padding: 30px 35px;
+    text-decoration: none;
+    color: #D11067;
+    font-weight: 600;
+}
+
+.a_button:hover {
+    color: #ffffff;
+    background-color: #D11067;
+}
+
+/*ESTILS ESPECIFICS*/
+
+.headcontainer {
+    background-color: #D11067;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.headinfo {
+    font-size: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+@media screen and (min-width: 1024px) 
+{ 
+.headinfo { 
+    justify-content: space-between;
+} }
+
+
+.headinfo ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    font-size: 1rem;
+}
+
+@media screen and (min-width: 1024px) 
+{ 
+.headinfo ul {
+    justify-content: space-between;
+    font-size: 1em;
+} }
+
+
+.headinfo a {
+    color: #ffffff;
+    text-decoration: none;
+    position: relative;
+    padding-left: 3rem;
+    
+}
+
+@media screen and (min-width: 1024px) 
+{ 
+.infoleft{
+    justify-content: space-between;
+    width: 400px;
+} }
+
+@media screen and (min-width: 1024px) 
+{ 
+.infoleft ul {
+    width: 100%;
+} }
+
+.infoleft a {
+ margin-right: 1rem;
+}
+
+.infoleft a::before {
+content: "";
+display: block;
+position: absolute;
+width: 2rem;
+height: 2rem;
+top: 0;
+left: 0;
+}
+
+.infoleft .telf::before {
+    background: url(../MaterialsPAC3/img/phone.svg) no-repeat;
+}
+
+.infoleft .mail::before {
+    background: url(../MaterialsPAC3/img/mail.svg) no-repeat;
+}
+
+.infoleft li{
+    height: 1.4rem;
+}
+
+.inforight {
+    width: 100%;   
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width: 1024px) 
+{ 
+.inforight{
+    width: 10%;
+} }
+
+
+.inforight ul {
+    justify-content: center;
+}
+
+@media screen and (min-width: 1024px) 
+{ 
+.inforight ul{
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+} }
+
+.inforight li {
+    margin: 0rem 1rem;
+    
+}
+
+.inforight a {
+    padding: 0;
+}
+
+
+.navmenu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navmenu img {
+    margin: 2% 0;
+}
+
+.navmenu ul {
+    list-style: none;
+    justify-content: space-between;
+    
+}
+
+.navmenu a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+.navmenu .active-link {
+    color: #FFF616;
+
+}
+
+.navmenu .signup {
+    font-family: inherit;
+    background-color: transparent;
+    background: #ffffff;
+    font-size: inherit;
+    border-style: none;
+    padding: 0;
+    color: #7A1628;
+    
+}
+
+
+.navmenu button .active-link {
+    color: #FFF616;
+}
+
+
+/*Menu Hamburguesa*/
+
+#menustate {
+    display: none;
+    
+  }
+  
+.burger {
+
+    display: grid;
+    place-content: center;
+    font-size: 4rem;
+    color: #ffffff;
+    font-weight: lighter;
+    
+    
+  }
+
+  
+  nav ul,
+  nav .close {
+    /* Hide the menu and close button */
+    display: none;
+    
+    
+  }
+  
+  #menustate:checked ~ nav :is(ul, .close) {
+    /* Show the menu and close button */
+    display: block;
+    
+  }
+  
+  #menustate:checked ~ nav .open {
+    /* Hide the open button */
+    display: none;
+  }
+
+/*Menu Hamburguesa end*/
+
+@media screen and (min-width:1500px)
+
+{
+nav .burger {
+    display: none;
+}
+
+nav .burger input {
+    display: none;
+}
+    
+.navmenu ul {
+    list-style: none;
+    align-items: baseline;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding: 0;
+    
+}
+
+.navmenu li {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.navmenu{
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+     
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-self: flex-start;   
+    
+}
+
+nav ul {
+    width: 100%;  
+
+}
+
+.navmenu a img{
+    margin: 1rem 0 1rem 0;
+}
+
+
+.navmenu a {
+    text-decoration: none;
+    color: #ffffff;
+    
+}
+
+.navmenu a:hover {
+    color: #FFF616;
+}
+
+.navmenu .active-link {
+    color: #FFF616;
+    border-bottom: #FFF616 solid 3px;
+}
+
+
+
+.navmenu .signup{
+    font-family: inherit;
+    font-weight: bold;
+    background-color:  #ffffff;
+    font-size: inherit;
+    border-radius: 35px;
+    padding: 15px 25px;
+    border-style: none;
+    color: #7A1628;
+}
+
+
+.navmenu .signup:hover {
+    background-color: #7A1628;
+    color: #ffffff;
+}
+
+
+}
+
+.backgroundheader {
+    background-image: url(../MaterialsPAC3/img/blackboard.jpg) ;
+    background-size: cover;
+}
+
+
+.mainheadercontainer h1 {
+    font-size: 6rem ;
+    text-align: center;
+    font-family: 'Satisfy', Helvetica, Arial, sans-serif;
+    color: #ffffff;
+    font-weight: 200;
+    padding: 2rem 0;
+    margin: 0 auto;
+    }
+
+@media screen and (min-width: 1024px) 
+{ 
+.mainheadercontainer h1 {
+    font-size: 4rem ;
+    width: 43%;
+}}
+
+.mainheadercontainer p{
+    color: #ffffff;
+}
+
+.onlinelearning {
+    color: #FFF616;
+}
+
+.subtitleonlinelearning {
+    text-align: center;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 1.3rem;
+    width: 39%;
+    padding: 0 0 4% 0;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 1024px) 
+{ 
+.subtitleonlinelearning {
+    padding: 50px 50px;
+    font-size: 1.1rem;
+} }
+
+
+.mainheadercontainer form {
+    background-color: rgb(255, 255, 255);
+    border-radius: 55px;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    padding: 2% 2% 2% 5%;
+
+}
+
+@media screen and (min-width: 1024px) 
+{ 
+.mainheadercontainer form {
+    width: 50%;
+    padding: 1% 1% 1% 5%;
+}}
+
+.mainheadercontainer input {
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+    background-color: transparent;
+    padding: 20px 0px;        
+    border: none;
+}
+
+@media screen and (min-width: 1024px) 
+{ 
+.mainheadercontainer input {
+    font-size: 1rem;
+}}
+
+.mainheadercontainer button{
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+    background-color: #D11067;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 25px;
+    border: none;
+}
+
+@media screen and (min-width: 1024px) 
+{ 
+.mainheadercontainer button{
+    font-size: 1rem;
+}}
+
+
+.headcourses {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding: 5% 0;
+}
+
+@media screen and (min-width: 1024px) 
+{ 
+.headcourses {
+    width: 80%;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr 1fr;
+}}
+
+.headcourses div {
+    font-size: 1.3rem;
+    text-align: center;
+    color: #ffffff;
+    padding: 0 0 3% 0;
+    width: 70%;
+}
+
+.headcourses h3 {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+@media screen and (min-width: 1024px) 
+{ 
+.headcourses div {
+padding: 0;
+width: 100%;
+font-size: 1rem;
+}}
+
+
+
+.precursos h2 {
+    color:#D11067;
+}
+
+.precursos p {
+    font-size: 1rem;
+    margin-block: 2%;
+}
+
+.cursos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+@media screen and (min-width: 768px) 
+{ 
+.cursos {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}}
+
+
+@media screen and (min-width: 1024px) 
+{ 
+.cursos {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+}}
+
+
+
+.cursos div {
+    position: relative;
+    border: solid #EDEDED;
+    border-radius: 10px;    
+}
+
+.cursos div img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 7px 7px 0 0;
+}
+
+.cursos a {
+    text-decoration: none;
+}
+
+.cursos p {
+    margin-left: 1.5rem;
+}
+
+.cursos p::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    left: 0;
+}
+
+
+.cursos .lessons::before {
+    background: url(../MaterialsPAC3/img/lessons.svg) no-repeat;
+}
+
+.cursos .hours::before {
+    background: url(../MaterialsPAC3/img/duration.svg) no-repeat;
+}
+
+.cursos .level::before {
+    background: url(../MaterialsPAC3/img/level.svg) no-repeat;
+}
+
+.cursos h3 {
+    display: inline-block;
+    font-size: 1.2rem;
+    text-align: left;
+    margin: 1rem 1rem 0 1rem;
+    color: #7A1628;
+    
+}
+
+@media screen and (min-width: 1024px) 
+{ 
+.cursos h3 {
+    font-size: 1rem;
+}}
+
+
+.cursos ul {
+    padding: 0;
+    margin: 1rem;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+@media screen and (min-width: 1024px) 
+{ 
+.cursos ul {
+    margin: 0;
+}}
+
+.cursos li {
+    position: relative;
+    font-size: 1rem;
+}
+
+@media screen and (min-width: 1024px) 
+{ 
+.cursos li {
+    font-size: 0.8rem;
+    margin: 0.5rem;
+}}
+
+
+.cursos .tagnew {
+    position:absolute;
+    font-size: 1.4rem;
+    top: 3%;
+    left: 3%;
+    z-index: 1;
+    color: #ffffff;
+    background-color: #D11067;
+    padding: 1.5% 2%;
+    border-radius: 31px;
+    margin: 0;
+}
+
+@media screen and (min-width: 1024px) 
+{ 
+.cursos .tagnew {
+    font-size: 1.2rem;
+}}
+
+.cursos .tagbestseller {
+    position:absolute;
+    font-size: 1.4rem;
+    top: 3%;
+    right: 3%;
+    z-index: 1;
+    color: #D11067;
+    background-color:#FFF616;
+    padding: 1.5% 2%;
+    border-radius: 31px;
+    margin: 0;
+}
+
+@media screen and (min-width: 1024px) 
+{ 
+.cursos .tagbestseller {
+    font-size: 1.2rem;
+}}
+
+
+.browse {
+    width: fit-content;
+    margin: 0 auto;
+    font-size: 3rem;
+    border: #D11067 solid 2px;
+    border-radius: 10px;
+    padding: 25px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: center;
+    font-size: 1.3em;
+    text-decoration: none;
+    color: #D11067;
+    font-weight: 600;
+}
+
+.browse:hover {
+    color: #ffffff;
+    background-color: #D11067;
+}
+
+.learningpath_background {
+    background-image: url(../MaterialsPAC3/img/learn-path.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 400px;
+}
+
+.learningtag .learningpath_background{
+    display: flex;
+    align-items: center;
+}
+
+.learningpath {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.learningpath h2 {
+    width: 100%;
+    text-align: center;
+    margin: 2rem 0 0;
+    color: #ffffff;
+    font-family: 'Satisfy', Helvetica, Arial, sans-serif;
+    font-size: 4rem;
+    font-weight: 200;
+}
+
+@media screen and (min-width: 1024px) 
+{ 
+.learningpath h2 {
+    font-size: 6rem;
+}}
+
+
+.learningpath p {
+    width: 100%;
+    display: block;
+    text-align: center;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 2% 0% 2% 0%;
+    line-height: 4rem;
+}
+
+@media screen and (min-width: 1024px) 
+{ 
+.learningpath p {
+    font-size: 1.3rem;
+}}
+
+.a_button_yellow {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    border: #ffffff solid 2px;
+    border-radius: 10px;
+    padding: 30px 55px;
+    margin: 0 0 2rem 0;
+    display: inline-block;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 1024px) 
+{ 
+.a_button_yellow {
+    font-size: 1.5rem;
+    padding: 30px 35px;
+}}
+
+.a_button_yellow:hover {
+    color: #FFF616;
+    border: #FFF616 solid 2px;
+}
+
+.learningcontent .container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+}
+
+@media screen and (min-width: 1024px) 
+{ .learningcontent .container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0;
+}}
+
+.learningsolutions {
+    width: 100%;
+}
+
+@media screen and (min-width: 1024px) 
+{ 
+.learningsolutions {
+    width: 60%;
+}}
+
+.learningstudent {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width: 1024px) 
+{ 
+.learningstudent {
+    width: 400px;    
+    margin: 3rem;
+    display: flex;
+    align-items: center;
+}}
+
+.learningstudent img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+.learningsolutions h2 {
+    font-family: 'Satisfy', Helvetica, Arial, sans-serif;
+    color: #7A1628;
+    font-size: 4rem;
+
+}
+
+.learningsolutions h3 {
+    color: #7A1628;
+}
+
+.learningsolutions p {
+    margin: 0;
+    line-height: 3.5rem;
+}
+
+.firstsolution {
+    position: relative;
+    padding-left: 10rem;
+}
+
+.firstsolution::before {
+    background: url(../MaterialsPAC3/img/leadership.svg) no-repeat;
+    background-position: center;
+    content: "";
+    position: absolute;
+    display: block;
+    width: 7rem;
+    height: 7rem;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background-color: #DEF5F0;
+}
+
+.secondsolution {
+    position: relative;
+    padding-left: 10rem;
+}
+
+.secondsolution::before {
+    background: url(../MaterialsPAC3/img/promotion.svg) no-repeat;
+    background-position: center;
+    content: "";
+    position: absolute;
+    display: block;
+    width: 7rem;
+    height: 7rem;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background-color: #E3EDFD;
+}
+
+.thirdsolution {
+    position: relative;
+    padding-left: 10rem;
+}
+
+.thirdsolution::before {
+    background: url(../MaterialsPAC3/img/rocket.svg) no-repeat;
+    background-position: center;
+    content: "";
+    position: absolute;
+    display: block;
+    width: 7rem;
+    height: 7rem;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background-color: #F7E9E7;
+}
+
+.categoriesbackground {
+    background-color: #EDEDED;
+    box-shadow: 0px 0px 20px #b1b0b0;
+    display: flex;
+    margin: 3rem 0 3rem 0;
+}
+
+
+.categories {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 4rem;
+    
+}
+
+@media screen and (min-width: 768px) 
+{ 
+.categories {
+    grid-template-columns: 1fr 1fr;
+}}
+
+
+@media screen and (min-width: 1024px) 
+{ 
+.categories {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}}
+
+@media screen and (min-width: 1024px) 
+{ 
+.categories .personaldevelopment {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+    align-content: center;
+}}
+
+
+
+.categoriestitle h2 {
+    color: #D11067;
+    text-align: center;
+    font-size: 3rem;
+    margin: 3rem;
+
+}
+
+.categories a {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: hsl(240, 46%, 24%);
+    border-radius: 35px;
+    padding: 2rem 4rem; 
+    margin: 0;
+    text-align: center;
+}
+
+.categories a:hover {
+    background-color: #D11067;
+}
+
+.categories h3 {
+    font-size: 1.2rem;
+    padding-bottom: 2%;
+}
+
+.categories p {
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+.instructor {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin: 4rem 0;
+}
+
+@media screen and (min-width: 768px) 
+{ .instructor {
+    flex-direction: row;
+}}
+
+.instructorimg {
+    padding-right: 0;
+}
+
+@media screen and (min-width: 768px) 
+{.instructorimg {
+    width: 50%;
+    padding-right: 3rem;
+}
+}
+
+.instructorimg img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+@media screen and (min-width: 768px)
+{.instructorimg img {
+    max-width: 100%;
+}}
+
+
+.instructorcontent {
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) 
+{.instructorcontent {
+    width: 50%;
+}
+}
+
+.instructorcontent h2 {
+    font-size: 2rem;
+}
+
+.instructor p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+
+footer {
+    background-color: #172655;
+    color: #ffffff;
+}
+
+footer p {
+    color: #ffffff;
+}
+
+
+.footercontainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+}
+
+@media screen and (min-width: 1024px) 
+{ 
+.footercontainer {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 3rem 0;
+}}
+
+.footercontact {
+    width: 100%;
+    margin: 10% 0 10%;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+}
+
+@media screen and (min-width: 1024px) 
+{ 
+.footercontact {
+    width: 35%;
+    font-size: 1.2rem;
+    font-weight: 700;
+}}
+
+.footercontact img {
+    width: 45%;
+}
+
+.footercontact a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+@media screen and (min-width: 1024px) 
+{ 
+.footernewsletter {
+    width: 40%;
+   
+}}
+
+.footernewsletter form {
+    font-size: 1rem;
+    
+}
+
+@media screen and (min-width: 1024px) 
+{ 
+.footernewsletter form {
+    font-size: 1.2rem;
+    margin: 10% 0 10%;
+}}
+
+.footernewsletter fieldset {
+    border: none;
+    padding: 0;
+}
+
+@media screen and (min-width: 1024px) 
+{ 
+.footernewsletter fieldset {
+    margin-top: 20%;
+}}
+
+.footernewsletter legend {
+    margin-bottom: 2rem;
+}
+
+
+.newsletterinput {
+    position: relative;
+    width: 80%;
+}
+
+@media screen and (min-width: 1024px) 
+{.newsletterinput {
+    position: relative;
+    width: 100%;
+}}
+
+.footernewsletter input {
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    width: 100%;
+    background-color: #405083;       
+    border: none;
+    border-radius: 35px;
+    padding: 1.5rem 2rem;
+    margin: 2rem 0;
+}
+
+@media screen and (min-width: 1024px) 
+{ 
+.footernewsletter input {
+    font-size: 1.2rem;   
+}}
+
+.footernewsletter ::placeholder {
+    color: #ffffff;
+}
+
+.footernewsletter button {
+    width: 50px;
+    height: 50px;
+    right: 8px;
+    top: 36px;
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+    background: url(../MaterialsPAC3/img/arrow.-right.svg) no-repeat center white;
+}
+
+@media screen and (min-width: 1024px) 
+{ .footernewsletter button {
+    top: 39px
+}}
+
+
+
+
+.footerlink {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+@media screen and (min-width: 1024px) 
+{ 
+.footerlink {
+    width: 100%;
+}}
+
+
+.footerlink a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+@media screen and (min-width: 1024px) 
+{ 
+.footerlink a {
+    font-size: 1.1rem;  
+}}
+
+.footerphotos {
+    display: flex;
+}
+
+
+.footerphotos ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 5rem 0;
+    align-items: center;
+    padding: 0;
+}
+
+@media screen and (min-width: 1024px) 
+{ 
+.footerphotos ul {
+    margin: 0 0 7rem 0;    
+}}
+
+
+.footerphotos li{
+    font-size: 1rem;
+    color: #ffffff;
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    display: flex;
+    margin: 0px 0px 10px 5px  
+}
+
+@media screen and (min-width: 1024px) 
+{ 
+.footerphotos li{
+    font-size: 1.1rem;  
+}}
+
+.footerphotos li a{
+    text-decoration: none;
+    color: #ffffff;
+    padding: 1px;
+    background-color: #405083;
+
+}
+
+/*BECOME AN INSTRUCTOR*/
+
+.becomeaninstructorcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+}
+
+@media screen and (min-width: 1024px) 
+{ 
+.becomeaninstructorcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}}
+
+
+.becomeaninstructorcontainer h1{
+    font-size: 2.5rem;
+}
+
+.becomeaninstructorcontainer p.introinstructor {
+    color: #172655;
+    margin-bottom: 5%;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
+
+.becomeaninstructorcontainer img {
+    width: 100%;
+    margin-bottom: 5%;
+    
+}
+
+
+@media screen and (min-width: 1024px) 
+{
+    .becomeaninstructorcontainer img {
+        width: 60%;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+        
+}}
+
+
+.becomeaninstructorcontainer p {
+    color: #172655;
+    line-height: 1.5rem;
+    font-size: 1rem;
+}
+
+.instructorleft {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+@media screen and (min-width: 1024px) 
+{ .instructorleft {
+    width: 70%;
+    
+}}
+
+.instructorleft h2 {
+    width: 100%;
+}
+
+
+.steplist {
+    border: #D11067 solid 4px;
+    color: #D11067;
+    padding: 1rem 4rem 1rem 2.5rem ;
+    
+}
+
+.steplist li {
+    font-weight: 700;
+    line-height: 3rem;
+    margin: 1rem 0;
+    
+}
+
+.steplist a {
+    text-decoration: none;
+    color: #D11067;
+}
+
+.stepdescription {
+    list-style: none;
+    padding: 0 0 0 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    counter-reset: section;
+    
+}
+
+.stepdescription h3 {
+    font-size: 0.95rem;
+    color:#172655;
+    position: relative;
+
+}
+
+
+.stepdescription h3::before {
+    counter-increment: section;
+    content: "" counter(section) "";
+    padding: 0.5rem 1rem;
+    border: #172655 solid 1px;
+    position: absolute; 
+    left: -4rem;
+   
+}
+
+.stepdescription .a_button {
+    font-size: 1rem;
+    padding: 20px 25px;
+}
+
+
+
+.stepone {
+    max-width: 90%;
+    margin-bottom: 5%;
+    
+}
+
+.firstcontainer-step-one {
+    border: #4050832f solid 1px;
+    padding: 2rem;
+    margin-bottom: 5%;
+}
+
+.firstcontainer-step-one h4 {
+    color: #000000;
+    margin-bottom: 3rem;
+}
+
+.firstcontainer-step-one img {
+    width: 5%;
+    margin: 0 2% 0 0 ;
+    float: left;
+    
+}
+
+.firstcontainer-step-one p {
+    color: #000000;
+}
+
+
+.secondcontainer-step-one {
+    border: #4050832f solid 1px;
+    padding: 2rem;
+    margin-bottom: 3%;
+}
+
+.secondcontainer-step-one h4 {
+    
+    color: #000000;
+    
+}
+
+.secondcontainer-step-one ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.secondcontainer-step-one li {
+    color: #000000;
+    font-size: 0.9rem;
+    line-height: 2rem;
+    width: 28%;
+    margin-left: 2rem;
+}
+
+.steptwo {
+    max-width: 92%;
+    margin-bottom: 5%;
+    
+}
+
+.stepthree {
+    max-width: 92%;
+    margin-bottom: 5%;
+    
+}
+
+.stepfour {
+    max-width: 92%;
+    margin-bottom: 5%;
+}
+
+
+.instructorright {
+    width: 75%;
+    margin: 0 auto;
+    border: #172655 solid 1px;
+    margin-bottom: 10%;
+}
+
+@media screen and (min-width: 1024px) 
+{ .instructorright {
+    width: 25%;
+    height: fit-content;
+    margin: 3rem 0 3rem 3rem ;
+    position: sticky;
+    top: -75%;
+}}
+
+
+
+.instructorright h2 {
+    color: #172655;
+    margin: 0;
+    padding: 1rem;
+    font-size: 1rem;
+    border-bottom: #172655 solid 1px;
+    background-color: #92a8e948;
+}
+
+.instructorright ol {
+    padding: 0 0 0 2rem;
+    font-size: 1rem;
+    color: #172655;
+}
+
+.instructorright ul {
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+
+.instructorright ol>li {
+    font-size: 1rem;
+    font-weight: 700;
+    
+}
+
+.instructorright ul>li {
+    list-style: none;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 3rem;
+    display: flex;    
+    
+}
+
+.instructorright ul>li:first-child {
+    margin-top: 2rem;
+}
+
+.instructorright ul>li b {
+    margin-right: 1%;
+}
+
+.instructorright img {
+    width: 8%;
+    margin:  0 1rem 0 0;
+}
+
+.careercontainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.arrow {
+    padding: 5%;
+    border-top: #333333 solid 6px;
+    border-right: #333333 solid 6px;
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+    transform: rotateZ(135deg);
+    
+}
+
+
+/*CONTACT*/
+
+.maincontact {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+@media screen and (min-width: 1024px) {
+    .contactleft {
+        width: 75%;
+}}
+
+.contactright {
+    background-color: #FEFBF4;
+    height: fit-content;
+    margin: 3rem 0;
+
+}
+
+@media screen and (min-width: 1024px) {
+    .contactright {
+        width: 25%;
+        position: sticky;
+        top: 0;
+        
+}}
+
+.contactleft h1 {
+    font-size: 2.5rem;
+}
+
+.contactleft p {
+    color: #172655;
+    line-height: 1.5rem;
+}
+
+.contactleft h2 {
+    font-size: 2rem;
+}
+
+.contactleft ul{
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+}
+
+.contactleft li {
+    margin-right: 2rem;
+}
+
+.contactleft h3 {
+    color: #7A1628;
+}
+
+.contactleft a {
+    text-decoration: none;
+    color: #D11067;
+}
+
+
+.ambassadors {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 1024px){
+    .ambassadors {
+        flex-direction: row;
+    }
+}
+
+
+.ambassadors div {
+    background-color: #EDEDED;
+    width: 100%;
+    text-align: center;
+    margin: 0.2rem;
+    padding: 2rem;
+
+}
+
+@media screen and (min-width: 1024px){
+    .ambassadors div {
+        width: 48%;
+}}
+
+.ambassadors img {
+    max-width: 30%;
+    border: #172655 solid 4px;
+    border-radius: 50%;
+}
+
+.ambassadors .flag {
+    max-width: 5% ;
+    border: none;
+    border-radius: 0;
+}
+
+.ambassadors h3 {
+    margin-bottom: 0;
+}
+
+.ambassadors li {
+    margin-bottom: 0.5rem;
+    width: 100%;
+}
+
+.ambassadors li:first-child a{
+    color: #7A1628;
+    border-bottom: #7A1628 solid 1px;
+}
+
+
+
+.formcontact fieldset {
+    border: none;
+}
+
+.formcontact h3 {
+    font-size: 1.2rem;
+    color: #7A1628;
+    
+}
+
+.formcontact fieldset:first-child input {
+    width: 100%;
+    padding: 0.5rem 0;
+    margin: 1rem 0;
+}
+
+.formcontact .input {
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.formcontact fieldset:nth-child(2) input {
+    margin-right: 1rem;
+}
+
+.formcontact fieldset:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+}
+
+.formcontact button {
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    width: 100%;
+    padding: 1rem 0;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    background-color: #172655;
+    color: #ffffff;
+    border-radius: 10px;
+    border: none;
+}
+
+.formcontact fieldset:nth-child(4) {
+    display: flex;
+    flex-wrap: wrap;
+}
